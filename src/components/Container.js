@@ -1,6 +1,6 @@
 
 import React, { Suspense, useRef} from 'react'
-import { Canvas} from '@react-three/fiber'
+import {Canvas} from '@react-three/fiber'
 import {OrbitControls} from "@react-three/drei"
 import Bondi from "./Bondi"
 
@@ -24,7 +24,7 @@ function Container(props) {
   }}>
 
         <ambientLight intensity={0.6} />
-        <directionalLight intensity={0.5} />
+        <directionalLight intensity={0.8} />
         <Suspense fallback={null}>
         <Bondi/>
         </Suspense>
